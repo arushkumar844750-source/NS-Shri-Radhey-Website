@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mom's Cosmetics</title>
+    <title>NS Shri Radhey</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +23,11 @@
 </div>
 
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="javascript:void(0)" onclick="showSection('about')">About</a></li>
+
+<li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
     </ul>
 </nav>
 
@@ -41,8 +42,9 @@
             Luxury products at affordable prices.
         </p>
 
-        <button class="shop-btn">Shop Collection</button>
-
+<button class="shop-btn" onclick="window.location.href='products.html'">
+    Shop Collection
+</button>
     </div>
 
     <div class="hero-image">
@@ -52,31 +54,36 @@
     </div>
 
 </section>
-<section class="categories">
 
-    <h2>Shop by Category</h2>
+<section class="about-section hidden-section" id="about">
 
-    <div class="category-container">
+    <h2>About NS Shri Radhey</h2>
 
-        <div class="category-card">
-            <h3>💄 Lipsticks</h3>
-        </div>
-
-        <div class="category-card">
-            <h3>✨ Skincare</h3>
-        </div>
-
-        <div class="category-card">
-            <h3>🌸 Perfumes</h3>
-        </div>
-
-        <div class="category-card">
-            <h3>💅 Nail Care</h3>
-        </div>
-
-    </div>
+    <p>
+        NS Shri Radhey brings premium beauty and personal care products
+        with quality, trust and affordable prices.
+        Our goal is to provide products that help you feel confident every day.
+    </p>
 
 </section>
+
+
+<section class="contact-section hidden-section" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>📞 Phone: 9315287145</p>
+
+    <p>📞 Phone: 9211322238</p>
+
+    <p>📧 Email: arushkumar844750@gmail.com</p>
+
+    <p>📍 Location: Badarpur, New Delhi</p>
+
+</section>
+<a href="https://wa.me/919315287145?text=Hello%20NS%20Shri%20Radhey%2C%20I%20want%20to%20order%20products." target="_blank" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
     <script src="script.js"></script>
 
 </body>
